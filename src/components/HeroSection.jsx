@@ -76,7 +76,7 @@ const HeroSection = () => {
       {/* Stats Section */}
 
       {/* Stats Section */}
-      <div className="w-[60%] flex flex-col md:flex-row gap-2 justify-center z-10 mt-6 md:mt-12 md:bottom-[-40px] md:absolute relative">
+      <div className="w-[90%] flex flex-col md:flex-row gap-2 justify-center z-10 mt-6 md:mt-12 md:bottom-[-40px] md:absolute relative">
         <div className="text-center bg-white rounded-md p-2 shadow-lg w-full  text-black">
           <h2 className="text-2xl font-bold">10M+</h2>
           <p>Total Customers</p>
