@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FilterComponent from "./FilterComponent";
+import bghero from "../assets/herobg.jpg";
 
 const HeroSection = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -9,7 +10,10 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="bg-hero-bg bg-cover bg-center bg-no-repeat w-[95%] h-screen mx-auto rounded-3xl flex flex-col items-center text-white relative">
+    <div
+      className=" bg-cover bg-center bg-no-repeat w-[95%] h-screen mx-auto rounded-3xl flex flex-col items-center text-white relative"
+      style={{ backgroundImage: `url(${bghero})` }}
+    >
       {/* Navbar */}
       <nav className="absolute top-0 w-full flex justify-between items-center p-4 bg-transparent text-white z-10">
         <h1 className="font-bold text-xl">INDOTRAVI</h1>
