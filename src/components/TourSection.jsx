@@ -1,8 +1,8 @@
 import React from "react";
 import tourImage1 from "../assets/toursection1.jpg"; // Replace with your image paths
-// import tourImage2 from "../assets/tourImage2.jpg";
-// import tourImage3 from "../assets/tourImage3.jpg";
-// import tourImage4 from "../assets/tourImage4.jpg";
+import tourImage2 from "../assets/toursection2.jpg";
+import tourImage3 from "../assets/toursection3.jpg";
+import tourImage4 from "../assets/toursection4.jpg";
 
 const TourSection = () => {
   const locations = [
@@ -15,19 +15,19 @@ const TourSection = () => {
     {
       title: "Bali Beach Tourism",
       location: "Denpasar, Bali",
-      image: tourImage1,
+      image: tourImage2,
       style: "col-span-1", // Small image in row 1
     },
     {
       title: "Sumatra Tourism",
       location: "Lampung, South Sumatra",
-      image: tourImage1,
+      image: tourImage3,
       style: "col-span-1", // Small image in row 2
     },
     {
       title: "Borobudur Temple Tour",
       location: "Jogjakarta, Central Java",
-      image: tourImage1,
+      image: tourImage4,
       style: "col-span-2", // Large image in row 2
     },
   ];
@@ -51,7 +51,7 @@ const TourSection = () => {
         <div className="grid grid-cols-3 gap-4">
           {/* Row 1 */}
           <div className="grid grid-cols-3 col-span-3 gap-4">
-            <div className="col-span-2 row-span-1 relative rounded-lg overflow-hidden shadow-md">
+            <div className="col-span-2 row-span-1 relative rounded-lg overflow-hidden shadow-md transform transition-transform duration-200  hover:translate-y-[-10px]">
               {/* Large Image */}
               <img
                 src={locations[0].image}
@@ -64,7 +64,7 @@ const TourSection = () => {
                 <p className="text-sm">{locations[0].location}</p>
               </div>
             </div>
-            <div className="col-span-1 row-span-1 relative rounded-lg overflow-hidden shadow-md">
+            <div className="col-span-1 row-span-1 relative rounded-lg overflow-hidden shadow-md transform transition-transform duration-200  hover:translate-y-[-10px]">
               {/* Small Image */}
               <img
                 src={locations[1].image}
@@ -81,7 +81,7 @@ const TourSection = () => {
 
           {/* Row 2 */}
           <div className="grid grid-cols-3 col-span-3 gap-4">
-            <div className="col-span-1 row-span-1 relative rounded-lg overflow-hidden shadow-md">
+            <div className="col-span-1 row-span-1 relative rounded-lg overflow-hidden shadow-md transform transition-transform duration-200  hover:translate-y-[10px]">
               {/* Small Image */}
               <img
                 src={locations[2].image}
@@ -94,7 +94,7 @@ const TourSection = () => {
                 <p className="text-sm">{locations[2].location}</p>
               </div>
             </div>
-            <div className="col-span-2 row-span-1 relative rounded-lg overflow-hidden shadow-md">
+            <div className="col-span-2 row-span-1 relative rounded-lg overflow-hidden shadow-md transform transition-transform duration-200  hover:translate-y-[10px]">
               {/* Large Image */}
               <img
                 src={locations[3].image}

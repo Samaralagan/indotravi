@@ -4,6 +4,11 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import TourSection from "./components/TourSection";
+import HowItWorks from "./components/HowItWorks";
+import Package from "./components/Package";
+import Reviews from "./components/Reviews";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +18,11 @@ function App() {
       {/* <Navbar /> */}
       <HeroSection />
       <TourSection />
+      <HowItWorks />
+      <Package />
+      <Reviews />
+      <Blog />
+      <Footer />
     </div>
   );
 }
